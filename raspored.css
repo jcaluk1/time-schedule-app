@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-/* Navbar */
-
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -23,9 +21,6 @@
     background-color: #ddd;
     color: black;
 }
-
-/* Main section */
-
 
 table {
     width: 95%;

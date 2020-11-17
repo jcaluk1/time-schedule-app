@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Raspored</title>
+    <title>Nastavnici</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./planiranjeNastavnik.css">
@@ -24,12 +24,12 @@
     <form>
         <div class="container">
             <div class="row">
-                <label for="firstname">Naziv aktivnosti: </label>
+                <label class="block-label" for="firstname">Naziv aktivnosti: </label>
                 <input class="block-element" type="text" id="firstname">
             </div>
 
             <div class="row">
-                <label for="type">Tip aktivnosti: </label>
+                <label class="block-label" for="type">Tip: </label>
                 <select class="block-element" name="type" id="type">
                     <option value="predavanje">Predavanje</option>
                     <option value="vjezba">Vježba</option>
@@ -37,17 +37,17 @@
             </div>
 
             <div class="row">
-                <label for="start">Početak: </label>
+                <label class="block-label" for="start">Početak: </label>
                 <input class="block-element" type="time" id="start" name="start">
             </div>
 
             <div class="row">
-                <label for="end">Kraj: </label>
+                <label class="block-label" for="end">Kraj: </label>
                 <input class="block-element" type="time" id="end" name="end">
             </div>
 
             <div class="row">
-                <label for="day">Izaberi dan: </label>
+                <label class="block-label" for="day">Izaberi dan: </label>
                 <select class="block-element" name="day" id="day">
                     <option value="pon">Ponedjeljak</option>
                     <option value="uto">Utorak</option>
@@ -57,9 +57,8 @@
                 </select>
             </div>
 
-            <div>
-                <input class="block-element" type="submit" value="Kreiraj aktivnost">
-            </div>
+            <input class="block-element" type="submit" value="Kreiraj aktivnost">
+
 
         </div>
     </form>
