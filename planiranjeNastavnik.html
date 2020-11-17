@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Raspored</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./planiranjeNastavnik.css">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./raspored.html">Raspored</a>
+        <a href="./aktivnost.html">Aktivnost</a>
+        <a href="./podaciStudent.html">Student</a>
+        <a href="./planiranjeNastavnik.html">Nastavnik</a>
+    </div>
+
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <label for="firstname">Naziv aktivnosti: </label>
+                <input class="block-element" type="text" id="firstname">
+            </div>
+
+            <div class="row">
+                <label for="type">Tip aktivnosti: </label>
+                <select class="block-element" name="type" id="type">
+                    <option value="predavanje">Predavanje</option>
+                    <option value="vjezba">Vježba</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="start">Početak: </label>
+                <input class="block-element" type="time" id="start" name="start">
+            </div>
+
+            <div class="row">
+                <label for="end">Kraj: </label>
+                <input class="block-element" type="time" id="end" name="end">
+            </div>
+
+            <div class="row">
+                <label for="day">Izaberi dan: </label>
+                <select class="block-element" name="day" id="day">
+                    <option value="pon">Ponedjeljak</option>
+                    <option value="uto">Utorak</option>
+                    <option value="sri">Srijeda</option>
+                    <option value="cet">Cetvrtak</option>
+                    <option value="pet">Petak</option>
+                </select>
+            </div>
+
+            <div>
+                <input class="block-element" type="submit" value="Kreiraj aktivnost">
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
