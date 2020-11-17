@@ -37,7 +37,7 @@
 
 .card {
     flex: 1;
-    height: 20vw;
+    height: 250px;
     text-align: center;
     border: 2px solid #333;
     border-radius: 40px;
@@ -47,7 +47,7 @@
 }
 
 .card-middle {
-    height: 30vw;
+    height: 375px;
     border-radius: 20px;
 }
 
@@ -66,4 +66,23 @@
     top: -12px;
     padding: 0 10px;
     font-weight: bold;
+    text-overflow: clip;
+    width:60%
+
 }
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+      display: block;
+      margin: 20px;
+      min-width: 400px;
+    }
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #prev-card {
+        display: none;
+    }
+  }
