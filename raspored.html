@@ -26,31 +26,57 @@
             <th></th>
             <td></td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">08:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">08:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">09:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">09:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">10:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">10:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">11:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">11:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">12:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">12:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">13:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">13:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">14:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">14:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">15:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">15:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">16:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">16:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">17:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">17:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">18:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">18:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">19:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">19:00</h5>
+            </td>
             <td></td>
-            <td class="time-cell"><h5 class="time-number">20:00</h5></td>
+            <td class="time-cell">
+                <h5 class="time-number">20:00</h5>
+            </td>
             <td></td>
         </tr>
 
@@ -200,6 +226,21 @@
             <td class="cell-dash-solid"></td>
         </tr>
     </table>
+    <div id="okvir"></div>
+
+    <script src="./iscrtajModul.js"></script>
+    <script>
+        const okvir = document.getElementById("okvir");
+        const raspored = new Raspored();
+        raspored.iscrtajRaspored(okvir, ["Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak"], 7, 21);
+        raspored.dodajAktivnost(okvir, "WT", "predavanje", 9, 12, "Ponedjeljak");
+        raspored.dodajAktivnost(okvir, "WT", "vježbe", 12, 13.5, "Ponedjeljak");
+        raspored.dodajAktivnost(okvir, "RMA", "predavanje", 14, 17, "Ponedjeljak");
+        raspored.dodajAktivnost(okvir, "RMA", "vježbe", 12.5, 14, "Utorak");
+        raspored.dodajAktivnost(okvir, "DM", "tutorijal", 14, 16, "Utorak");
+        raspored.dodajAktivnost(okvir, "DM", "predavanje", 16, 19, "Utorak");
+        raspored.dodajAktivnost(okvir, "OI", "predavanje", 12, 15, "Srijeda");
+    </script>
 
 </body>
 
