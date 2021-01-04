@@ -1,14 +1,12 @@
 const Joi = require("joi");
 
 const activitySchema = Joi.object({
-    naziv: Joi.string().min(3).max(25).required(),
+    naziv: Joi.string().min(2).max(25).required(),
     tip: Joi.string().valid("predavanje", "vjezbe").required(),
     dan: Joi.string().valid("ponedjeljak", "utorak", "srijeda", "cetvrtak", "petak", "subota", "nedjelja"),
     pocetak: Joi.string().length(5).pattern(/^([01][0-9]|2[0-3]):[0-5][0-9]$/).required(),
     kraj: Joi.string().length(5).pattern(/^([01][0-9]|2[0-3]):[0-5][0-9]$/).required()
 });
-
-
 
 exports.validateActivity = async (req, res, next) => {
     try {

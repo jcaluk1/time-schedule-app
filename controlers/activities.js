@@ -7,7 +7,7 @@ exports.getActivites = async (req, res, next) => {
 
 exports.postActivity = async (req, res, next) => {
     const { pocetak, kraj, dan } = req.body;
-    const someActivityOverlap = req.activites.some(act => dan == act.dan && act.pocetak < kraj && kraj <= act.kraj || pocetak < act.kraj && act.kraj < pocetak);
+    const someActivityOverlap = req.activites.some(act => dan == act.dan && act.pocetak < kraj && kraj <= act.kraj || pocetak < act.kraj && act.kraj < kraj);
     if (someActivityOverlap) {
         return res.status(400).json({ message: "Već postoji aktivnost u datom terminu" });
     }

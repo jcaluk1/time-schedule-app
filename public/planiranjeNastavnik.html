@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-
     <title>Nastavnici</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./planiranjeNastavnik.css">
 
 </head>
@@ -20,49 +18,68 @@
         <a href="./planiranjeNastavnik.html">Nastavnik</a>
     </div>
 
+    <div class="main-container">
+        <form action="#">
+            <h3 class="title">Unesite novu aktivnost</h3>
+            <div class="container">
+                <div class="row">
+                    <label class="block-label" for="naziv">Naziv aktivnosti: </label>
+                    <input class="block-element" type="text" name="naziv" min="2" max="25" required>
+                </div>
 
-    <form>
-        <h2 class="title">Unesite novu aktivnost</h3>
-        <div class="container">
-            <div class="row">
-                <label class="block-label" for="firstname">Naziv aktivnosti: </label>
-                <input class="block-element" type="text" id="firstname">
+                <div class="row">
+                    <label class="block-label" for="tip">Tip: </label>
+                    <select class="block-element" name="tip">
+                        <option value="predavanje">Predavanje</option>
+                        <option value="vjezbe">Vježba</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label class="block-label" for="pocetak">Početak: </label>
+                    <input class="block-element" type="time" name="pocetak" value="09:00" required>
+                </div>
+
+                <div class="row">
+                    <label class="block-label" for="kraj">Kraj: </label>
+                    <input class="block-element" type="time" name="kraj" value="11:00" required>
+                </div>
+
+                <div class="row">
+                    <label class="block-label" for="dan">Izaberi dan: </label>
+                    <select class="block-element" name="dan">
+                        <option value="ponedjeljak">Ponedjeljak</option>
+                        <option value="utorak">Utorak</option>
+                        <option value="srijeda">Srijeda</option>
+                        <option value="cetvrtak">Četvrtak</option>
+                        <option value="petak">Petak</option>
+                        <option value="subota">Subota</option>
+                        <option value="nedjelja">Nedjelja</option>
+                    </select>
+                </div>
+
+                <input class="block-element" type="submit" value="Kreiraj aktivnost">
+
+                <div class="block-element message"></div>
+
             </div>
-
-            <div class="row">
-                <label class="block-label" for="type">Tip: </label>
-                <select class="block-element" name="type" id="type">
-                    <option value="predavanje">Predavanje</option>
-                    <option value="vjezba">Vježba</option>
-                </select>
-            </div>
-
-            <div class="row">
-                <label class="block-label" for="start">Početak: </label>
-                <input class="block-element" type="time" id="start" name="start">
-            </div>
-
-            <div class="row">
-                <label class="block-label" for="end">Kraj: </label>
-                <input class="block-element" type="time" id="end" name="end">
-            </div>
-
-            <div class="row">
-                <label class="block-label" for="day">Izaberi dan: </label>
-                <select class="block-element" name="day" id="day">
-                    <option value="pon">Ponedjeljak</option>
-                    <option value="uto">Utorak</option>
-                    <option value="sri">Srijeda</option>
-                    <option value="cet">Cetvrtak</option>
-                    <option value="pet">Petak</option>
-                </select>
-            </div>
-
-            <input class="block-element" type="submit" value="Kreiraj aktivnost">
-
-
+        </form>
+        
+        <div>
+            <h3 class="title">Aktivnosti</h3>
+            <ul class="ul-cards">
+                <li class="card"></li>
+            </ul>
         </div>
-    </form>
+        <div>
+            <h3 class="title">Predmeti</h3>
+            <ul class="ul-cards">
+                <li class="card"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./planiranjeNastavnik.js" ></script>
 </body>
 
 </html>
