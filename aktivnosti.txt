@@ -1,0 +1,6 @@
+AAA,predavanje,08:00,11:00,ponedjeljak
+BBB,predavanje,08:00,11:00,utorak
+CCC,predavanje,08:00,11:00,srijeda
+DDD,predavanje,08:00,11:00,cetvrtak
+EEE,predavanje,08:00,13:00,petak
+AAA,vjezbe,15:00,17:00,ponedjeljak

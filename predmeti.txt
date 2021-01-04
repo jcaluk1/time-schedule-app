@@ -1,0 +1,4 @@
+FWT
+BWT
+IKS
+OKS
