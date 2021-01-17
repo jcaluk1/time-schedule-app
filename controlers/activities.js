@@ -1,4 +1,4 @@
-const Activity = require("../models/Activity");
+const Activity = require("../modelsFile/Activity");
 
 
 exports.getActivites = async (req, res, next) => {

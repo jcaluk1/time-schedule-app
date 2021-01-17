@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const Course = require("../models/Course"); 
-const Activity = require("../models/Activity");
+const Course = require("../modelsFile/Course");
+const Activity = require("../modelsFile/Activity");
 
 const deleteAll = async (req, res, next) => {
     await Course.setCourses([]);

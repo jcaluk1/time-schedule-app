@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unos studenata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./studenti.css">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./raspored.html">Raspored</a>
+        <a href="./aktivnost.html">Aktivnost</a>
+        <a href="./podaciStudent.html">Student</a>
+        <a href="./planiranjeNastavnik.html">Nastavnik</a>
+    </div>
+
+    <div class="main-container">
+        <form action="#">
+            <h3 class="title">Unos studenata</h3>
+            <div class="container">
+                 
+                <textarea id="unos" name="unos"></textarea>
+
+                <div class="row">
+                    <label class="block-label" for="grupa">Izaberi grupu: </label>
+                    <select class="block-element" name="grupa">
+                        <option value="RMAgrupa1">RMAgrupa1</option>
+                        <option value="RMAgrupa2">RMAgrupa2</option>
+                        <option value="RMAgrupa3">RMAgrupa3</option>
+                        <option value="MURgrupa1">MURgrupa1</option>
+                        <option value="MURgrupa2">MURgrupa2</option>
+                        <option value="MURgrupa3">MURgrupa3</option>
+                        <option value="TPgrupa1">TPgrupa1</option>
+                        <option value="TPgrupa2">TPgrupa2</option>
+                        <option value="TPgrupa3">TPgrupa3</option>
+                    </select>
+                </div>
+
+                <input class="block-element" type="submit" value="Pošalji">
+            </div>
+        </form>
+
+
+        <script src="./student.js" ></script>
+</body>
+
+</html>

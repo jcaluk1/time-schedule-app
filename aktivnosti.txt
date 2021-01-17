@@ -3,3 +3,4 @@ BBB,predavanje,08:00,11:00,utorak
 CCC,predavanje,08:00,11:00,srijeda
 DDD,predavanje,08:00,11:00,cetvrtak
 EEE,predavanje,08:00,13:00,petak
+NOVA,predavanje,06:00,07:00,ponedjeljak

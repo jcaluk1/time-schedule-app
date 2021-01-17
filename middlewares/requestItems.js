@@ -1,5 +1,5 @@
-const Activity = require("../models/Activity");
-const Course = require("../models/Course");
+const Activity = require("../modelsFile/Activity");
+const Course = require("../modelsFile/Course");
 
 exports.requestActivites = async (req, res, next) => {
     req.activites = await Activity.getActivities();

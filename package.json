@@ -1,5 +1,5 @@
 {
-  "name": "spirala2",
+  "name": "spirala4",
   "version": "1.0.0",
   "description": "",
   "author": "Ilma Kulovac",
@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "joi": "^17.3.0"
+    "joi": "^17.3.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
   }
 }
